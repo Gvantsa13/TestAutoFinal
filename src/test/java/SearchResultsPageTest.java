@@ -15,9 +15,9 @@ public class SearchResultsPageTest extends ChromeRunner {
     SearchResultsPageSteps searchResultsPageSteps = new SearchResultsPageSteps();
 
     @Test
-    @Description("პროდუქტის ძებნის შემოწმება - დადებითი შემთხვევა")
+    @Description("პროდუქტის ძებნის შემოწმება - უარყოფითი შემთხვევა")
     @Severity(SeverityLevel.CRITICAL)
-    public void successfulSearchOfProduct() {
+    public void searchOfProduct() {
         searchResultsPageSteps.goToSearchProducts()
                     .inputInvalidProductInSearch(invalidProduct)
                     .clickOnSearchButton();

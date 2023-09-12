@@ -28,7 +28,7 @@ public class SearchResultsPageTest extends ChromeRunner {
 
     @Test
     @Description("პროდუქტის ფასის კლების მიხედვით დალაგება")
-    @Severity(SeverityLevel.MINOR)
+    @Severity(SeverityLevel.BLOCKER)
     public void checkSortFromHighToLow(){
         searchResultsPageSteps.goToSearchProducts()
                 .inputProductInSearch(product)

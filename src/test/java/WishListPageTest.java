@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import static DataObject.WishListData.emptyData;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.sleep;
+
 
 public class WishListPageTest extends ChromeRunner {
     WishListPageSteps wishListPageSteps = new WishListPageSteps();
@@ -32,6 +32,7 @@ public class WishListPageTest extends ChromeRunner {
 
     @Test
     @Description("პროდუქტის წაშლა სასურველი სიიდან")
+    @Severity(SeverityLevel.NORMAL)
     public void deleteProductFromWishList(){
         wishListPageSteps.clickOnDropdownButton()
                 .chooseTechnics()
